@@ -160,7 +160,7 @@ def getWeather():
         weather_bkgd = "bkgd_clouds.png"
         font_col = BLACK
 
-    background_file = f"images/{weather_bkgd}"
+    background_file = f"app_development/images/{weather_bkgd}"
     background = pygame.image.load(background_file)
     backgroundRect = background.get_rect()
 
@@ -181,27 +181,30 @@ pygame.display.set_caption("Earth Weather App")
 # load background images to pygame
 # everytime we add an image, need the get_rect to be able to set position dimensions on screen
 # app icon
-app_icon = pygame.image.load("images/weather_icon.png")
+app_icon = pygame.image.load("app_development/images/weather_icon.png")
 
 # change our app icon image!
 pygame.display.set_icon(app_icon)
 
 # Load Button Images and Rect Positions
-search_button = pygame.image.load("images/search_location_button.png")
+search_button = pygame.image.load("app_development/images/search_location_button.png")
 search_buttonRect = search_button.get_rect(topleft=(360,10))
-refresh_button = pygame.image.load("images/refresh_button.png")
+
+refresh_button = pygame.image.load("app_development/images/refresh_button.png")
 refresh_buttonRect = refresh_button.get_rect(topleft=(500,10))
-show_more_button = pygame.image.load("images/show_more_button.png")
+
+show_more_button = pygame.image.load("app_development/images/show_more_button.png")
 show_more_buttonRect = show_more_button.get_rect(topleft=(600, 125))
-hide_button = pygame.image.load("images/hide_button.png")
+
+hide_button = pygame.image.load("app_development/images/hide_button.png")
 hide_buttonRect = hide_button.get_rect(topleft=(565,130))
 
 # Load Icon Images
-sunrise_i = pygame.image.load("images/sunrise_icon.png")
-sunset_i = pygame.image.load("images/sunset_icon.png")
-UVI_i = pygame.image.load("images/UVI_icon.png")
-pressure_i = pygame.image.load("images/pressure_icon.png")
-humidity_i = pygame.image.load("images/humidity_icon.png")
+sunrise_i = pygame.image.load("app_development/images/sunrise_icon.png")
+sunset_i = pygame.image.load("app_development/images/sunset_icon.png")
+UVI_i = pygame.image.load("app_development/images/UVI_icon.png")
+pressure_i = pygame.image.load("app_development/images/pressure_icon.png")
+humidity_i = pygame.image.load("app_development/images/humidity_icon.png")
 
 # function to display text on screen
 def display_text(size, text, colour, x, y):
