@@ -45,7 +45,7 @@ geo_URL = "http://api.openweathermap.org/geo/1.0/direct?"
 weather_URL = "https://api.openweathermap.org/data/2.5/onecall?"
 
 # display text input box
-textinput = pygame_textinput.TextInput(initial_string="Toronto", font_size=30)
+textinput = TextInput(initial_string="Toronto", font_size=30)
 
 # get the specific coordinates for city name
 def getLocation():
