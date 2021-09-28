@@ -5,8 +5,6 @@ import os  # library to extract file directory
 from datetime import *
 from mathstropy import *
 
-import pygame_textinput  # add file to app folder
-
 # define some colours
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
